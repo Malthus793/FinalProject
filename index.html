@@ -12,6 +12,9 @@
                 
         <!-- Boxicons CSS -->
         <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        <style>
+            
+        </style>
                    
     </head>
     <body class="img js-fullheight"  style="background-image: url(images/IMG-20230902-WA0007.jpg); background-size: cover; background-position: center;">
@@ -30,6 +33,11 @@
                             <i class='bx bx-hide eye-icon'></i>
                         </div>
 
+                        <div class="field input-field">
+                            <input type="Confirm password" name="password2" placeholder="Password" class="password" required>
+                            <i class='bx bx-hide eye-icon'></i>
+                        </div>
+
                         
 
                         <div class="field button-field">
@@ -42,9 +50,7 @@
                         </div>
                     </form>
 
-                    <div class="form-link">
-                        <span>Don't have an account? <a  class="link signup-link">Sign up</a></span>
-                    </div>
+                    
                 </div>
 
                
@@ -55,7 +61,7 @@
             <div class="form signup">
                 <div class="form-content">
                     <header>Sign up</header>
-                    <form action="/register" method="POST">
+                    <form action="/loginPage" method="POST">
                         <div class="field input-field">
                             <input type="test" placeholder="ID/Passport No" class="input" required>
                         </div>
@@ -64,13 +70,10 @@
                             <input type="password" placeholder="Create password" class="password" required>
                         </div>
 
-                        <div class="field input-field">
-                            <input type="password2" placeholder="Confirm password" class="password" required>
-                            <i class='bx bx-hide eye-icon'></i>
-                        </div>
+                        
 
                         <div class="field button-field">
-                            <button>Sign up</button>
+                            <button>Login</button>
                         </div>
                     </form>
 
