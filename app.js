@@ -45,8 +45,6 @@ app.post('/register', (req, res) => {
     return res.status(400).send('Passwords do not match');
   }
 
- 
-        res.append('Registration Successful');
         res.redirect('/login');
       
 });
@@ -54,6 +52,9 @@ app.post('/register', (req, res) => {
 
 app.post('/main', (req, res) => {
   res.render('main')
+});
+app.get('/booking', (req, res) => {
+  res.render('booking')
 });
 app.get('/login', (req, res) => {
   // Render the 'login.ejs' template and pass data if needed

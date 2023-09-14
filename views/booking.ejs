@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>LULAMA</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Medicio
+  * Updated: Aug 30 2023 with Bootstrap v5.3.1
+  * Template URL: https://bootstrapmade.com/medicio-free-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  
+
+  <!-- ======= Header ======= -->
+  
+
+ 
+  
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="text-center">
+          <h3>Successfully Booked</h3>
+        </div>
+
+      </div>
+    </section>
+  
+    
+   
+        <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
+          
+          <div class="d-flex align-items-center">
+            
+
+    <form id="bookingForm">
+       <br>
+        <label for="patientName">Patient Name:</label>
+        <input type="text" id="patientName" name="patientName" required><br><br>
+    
+        <label for="appointmentDate">Preferred Appointment Date:</label>
+        <input type="date" id="appointmentDate" name="appointmentDate" required><br><br>
+
+        <label for="appointmentTime">Preferred Appointment Time:</label>
+        <input type="time" id="appointmentTime" name="appointmentTime" required><br><br>
+
+        <button class="appointment-btn scrollto" type="submit">Submit</button>
+    </form>
+    <br>
+    <div id="bookingResult">
+        <!-- Booking ticket number will be displayed here -->
+    </div>
+
+    <script>
+        // JavaScript code to generate a booking ticket number
+        document.getElementById("bookingForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+            
+            // Generate a random ticket number (you can use a more sophisticated method)
+            const ticketNumber = Math.floor(Math.random() * 1000000);
+
+            // Display the ticket number to the user
+            const bookingResult = document.getElementById("bookingResult");
+            bookingResult.innerHTML = `
+                <p>Your booking request has been received.</p>
+                <p>Your booking ticket number is: <strong>${ticketNumber}</strong></p>
+            `;
+        });
+    </script>
+          </div>
+        </div>
+      
+    
+
+  <!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-6 col-md-12">
+            <div class="footer-info">
+                <a href="/main" class="logo me-auto"><img src="assets/img/IMG-20230902-WA0008.jpg" alt=""></a>
+             </div>
+          </div>
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>LULAMA</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/medicio-free-bootstrap-theme/ -->
+     
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
