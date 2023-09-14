@@ -2,6 +2,7 @@ const express = require('express');
 const mysql = require('mysql');
 const bodyParser = require('body-parser');
 const session = require('express-session');
+const path= require("path");
 const app = express();
 
 app.set('view engine', 'ejs'); // Set EJS as the template engine
@@ -60,6 +61,12 @@ app.get('/login', (req, res) => {
   // Render the 'login.ejs' template and pass data if needed
   res.render('login', { message: 'Already a member?' });
   
+});
+app.get('/pdf', (req, res) => {
+  const pdfFilePath = path.join(__dirname, 'views', 'Odd_tech.pdf');
+  
+  // Send the PDF file as a response
+  res.sendFile(pdfFilePath);
 });
 // Start the server
 const port = process.env.PORT || 3030;
