@@ -15,20 +15,20 @@ app.use(express.static('public'));
 app.use(express.static(__dirname + '/public'));
 
 // MySQL Connections
-const db = mysql.createConnection({
-  host: 'sql8.freemysqlhosting.net',
-  user: 'sql8643947',
-  password: '37zsfeVvQp',
-  database: 'sql8643947'
-});
+// const db = mysql.createConnection({
+//   host: 'sql8.freemysqlhosting.net',
+//   user: 'sql8643947',
+//   password: '37zsfeVvQp',
+//   database: 'sql8643947'
+// });
 
-db.connect(err => {
-  if (err) {
-    console.error('MySQL connection error:', err);
-  } else {
-    console.log('Connected to MySQL database');
-  }
-});
+// db.connect(err => {
+//   if (err) {
+//     console.error('MySQL connection error:', err);
+//   } else {
+//     console.log('Connected to MySQL database');
+//   }
+// });
 
 // Routes
 app.get('/', (req, res) => {
