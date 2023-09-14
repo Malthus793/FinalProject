@@ -45,27 +45,10 @@ app.post('/register', (req, res) => {
     return res.status(400).send('Passwords do not match');
   }
 
-  app.use(
-    session({
-      secret: 'your-secret-key', // Replace with a secure secret key
-      resave: true,
-      saveUninitialized: true,
-    })
-  );
-
-  db.query(
-    'INSERT INTO users (username, password) VALUES (?, ?)',
-    [username, password],
-    (err, results) => {
-      if (err) {
-        console.error('MySQL error:', err);
-        res.status(500).send('Internal Server Error');
-      } else {
+ 
         res.append('Registration Successful');
         res.redirect('/login');
-      }
-    }
-  );
+      
 });
 
 
